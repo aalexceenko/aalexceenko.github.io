@@ -1,0 +1,11 @@
+html,
+body {
+	min-height: 3592px;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 360px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
