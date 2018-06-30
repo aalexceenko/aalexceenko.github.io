@@ -1,0 +1,799 @@
+html,
+body {
+	min-height: 3542px;
+	margin: 0;
+	padding: 0;
+	font-family: "Futura PT";
+}
+ @font-face {
+    font-family: "Futura PT Book"; /* Гарнитура шрифта */
+    src: url(../fonts/futura-pt-book-5900f99d0e8c4.otf); /* Путь к файлу со шрифтом */
+   }
+    @font-face {
+    font-family: "Futura PT Light"; /* Гарнитура шрифта */
+    src: url(../fonts/futura-pt-light-5900f9e73ac42.otf); /* Путь к файлу со шрифтом */
+   }
+      @font-face {
+    font-family: "Futura PT Demi"; /* Гарнитура шрифта */
+    src: url(../fonts/FuturaPTDemi.otf); /* Путь к файлу со шрифтом */
+   }
+.container {
+	width: 1250px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.main-header {
+	min-height: 900px;
+}
+.navigation-bar {
+	min-height: 65px;
+	background: #f1f1f1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 120;
+}
+.main-navigation {
+	width: 430px;
+	float: left;
+}
+.main-navigation ul {
+	padding-left: 0;
+	margin-top: 24px;
+}
+.main-navigation a {
+	text-decoration: none;
+	font-family: "Futura PT Book";
+	font-size: 18px;
+	line-height: 24px;
+	color: #2b2b2b;
+}
+.main-navigation li {
+	display: inline-block;
+	padding-right: 27px;
+}
+.selected {
+	border-bottom: 3px solid #ffd200;
+	padding-bottom: 24px;
+}
+
+.main-navigation a:hover {
+	border-bottom: 3px solid #d19726;
+	padding-bottom: 24px;
+}
+.main-navigation a:active, .main-navigation a:focus {
+	border-bottom: 3px solid #b2981f;
+	padding-bottom: 24px;
+}
+.main-navigation li:last-child {
+	padding-right: 0;
+}
+.logo {
+	float: left;
+	width: 180px;
+	height: 60px;
+	margin-right: 350px;
+}
+.logo p:first-child {
+	width: 60px;
+	height: 35px;
+	text-transform: uppercase;
+	font-family: "Futura PT Book";
+	font-size: 24px;
+	line-height: 24px;
+	color: #2f3439;
+	margin-bottom: 0;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+	padding-top: 11px;
+}
+.logo p:last-child {
+	width: 70px;
+	height: 35px;
+	text-transform: uppercase;
+	font-family: "Futura PT Book";
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	margin-bottom: 0;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	background: #000000;
+	font-weight: bold;
+}
+.number {
+	float: right;
+	width: 214px;
+	padding-left: 20px;
+	font-family: "Futura PT Book";
+	font-size: 24px;
+	line-height: 24px;
+	color: #2b2b2b;
+}
+.navigation-bar::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.main {
+	position: relative;
+	min-height: 850px;
+	background: #fafafa;
+	background-image: url(mg/details.jpg);
+}
+/*.main img {
+	position: absolute;
+	right: 300px;
+	top: 257px;
+}*/
+.main img {
+	float: right;
+	margin-top: -280px;
+}
+.main::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.main h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding-top: 219px;
+	font-family: "Futura PT Book";
+	font-size: 48px;
+	color: #2b2b2b;
+	line-height: 48px;
+	font-weight: normal;
+}
+.main p {
+	font-family: "Futura PT Light";
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: lighter;
+	margin-bottom: 60px;
+}
+.main form {
+	height: 57px;
+	width: 320px;
+	padding-left: 38px;
+	padding-top: 17px;
+	box-sizing: border-box;
+	background-color: #ffd200;
+	color: #000000;
+	font-family: "Futura PT Book";
+	box-shadow: 0 5px 0 0 #ae7300;
+	font-size: 24px;
+}
+.bullets {
+	margin-top: 55px;
+	margin-bottom: 55px;
+	position: relative;
+}
+.bullets h2 {
+	font-family: "Futura PT Demi";
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	color: #2f3439;
+}
+.bullets p {
+	color: #2f3439;
+	font-family: "Futura PT Book";
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+}
+.bullets article {
+	display: block;
+	float: left;
+	width: 290px;
+	height: 150px;
+	margin-right: 30px;
+}
+.bullets article:last-child {
+	margin-right: 0;
+}
+.bullets .garanty::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: -5px;
+}
+.bullets .garanty::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: -1px;
+	left: 15px;
+}
+.bullets .garanty p::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: -5px;
+	left: 325px;
+}
+.bullets .garanty p::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: -1px;
+	left: 320px;
+}
+.bullets .garanty h2::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: 145px;
+	left: 19px;
+}
+.bullets .garanty h2::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: 150px;
+	left: 15px;
+}
+.bullets .pay p::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: -5px;
+	left: 644px;
+}
+.bullets .pay p::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: -1px;
+	left: 640px;
+}
+.bullets .pay h2::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: 145px;
+	left: 323px;
+}
+.bullets .pay h2::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: 150px;
+	left: 318px;
+}
+.bullets .order p::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: -5px;
+	left: 964px;
+}
+.bullets .order p::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: -1px;
+	left: 960px;
+}
+.bullets .order h2::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: 145px;
+	left: 643px;
+}
+.bullets .order h2::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: 150px;
+	left: 638px;
+}
+.bullets .delivery p::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: -5px;
+	left: 1269px;
+}
+.bullets .delivery p::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: -1px;
+	left: 1264px;
+}
+.bullets .delivery h2::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: 145px;
+	left: 963px;
+}
+.bullets .delivery h2::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: 150px;
+	left: 959px;
+}
+.bullets .delivery::before  {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 11px;
+	background-color: #c9c9c9;
+	top: 145px;
+	left: 1269px;
+}
+.bullets .delivery::after  {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 2px;
+	background-color: #c9c9c9;
+	top: 150px;
+	left: 1265px;
+}
+.bullets::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.selection {
+	min-height: 950px;
+	background: url(../img/parts.png) #f4f4f4;
+	background-repeat: no-repeat;
+	background-size: 100%;f
+}
+.selection h3 {
+	margin-top: 0;
+	padding-top: 90px;
+	text-transform: uppercase;
+	margin-bottom: 55px;
+	text-align: center;
+	font-family: "Futura PT Demi";
+	font-size: 30px;
+	line-height: 30px;
+}
+.selection .block {
+	width: 570px;
+	height: 620px;
+	margin-left: 333px;
+	background: #ffffff;
+	border: 5px solid #ffc600;
+}
+.block p:first-child {
+	width: 458px;
+	height: 179px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	margin-left: 55px;
+	box-sizing: border-box;
+	color: #1f1f1f;
+	font-family: "Futura PT Light";
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-weight: lighter;
+}
+.block p:last-child {
+	color: #2d2d2d;
+	font-family: "Futura PT Light";
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 0;
+	margin-left: 55px;
+}
+.block form input, 
+.write-us input[name="name"], 
+.write-us input[name="mail"] {
+	width: 465px;
+	height: 60px;
+	margin-left: 55px;
+	margin-bottom: 30px;
+	font-family: "Futura PT Light";
+	font-size: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #a8a8a8;
+	background-color: #eeeef0;
+	outline: 0;
+	border: 0;
+}
+.block form input:last-of-type  {
+	margin-bottom: 0;
+} 
+.block form button,
+.write-us form button  {
+	margin-top: 45px;
+	margin-left: 55px;
+	width: 465px;
+	height: 60px;
+	box-shadow: 0 5px 0 0 #ae7300;
+	margin-bottom: 45px;
+	font-family: "Futura PT Book";
+	font-size: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #000000;
+	background-color: #ffc600;
+	outline: 0;
+	border: 0;
+}
+.block form button:hover,
+.connection-form:hover,
+.feedback button:hover {
+	background-color: #e6c010;
+}
+.block form button:active,
+.connection-form:active,
+.feedback button:active {
+	background-color: #b2981f;
+}
+.brands h2 {
+	margin-top: 0;
+	padding-top: 80px;
+	text-transform: uppercase;
+	padding-bottom: 105px;
+	margin-bottom: 0;
+	font-family: "Futura PT Demi";
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+}
+.brands h2::before {
+	width: 405px;
+	height: 10px;
+	background-color: #eaeaea;
+	position: absolute;
+	content: "";
+	left: -20px;
+	top: 95px;
+}
+.brands h2::after {
+	width: 405px;
+	height: 10px;
+	background-color: #eaeaea;
+	position: absolute;
+	content: "";
+	left: 865px;
+	top: 95px;
+}
+.brands section {
+	width: 1150px;
+	padding-left: 40px;
+	position: relative;
+}
+.brands section a {
+	width: 160px;
+	height: 60px;
+	float: left;
+	position: relative;
+	margin-right: 5px;
+}
+.brands section a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	max-width: 85%;
+	height: auto;
+}
+.brands .second a {
+	width: 160px;
+	height: 80px;
+}
+.brands .first a:last-of-type,
+.brands .second a:last-of-type, 
+.brands .third a:last-of-type, 
+.brands .fourth a:last-of-type, 
+.brands .fifth a:last-of-type  {
+	margin-right: 0;
+}
+.fifth-1 {
+	margin-left: 160px;
+}
+.brands .second a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	max-width: 48%;
+	height: auto;
+}
+.brands .second a, .brands .third a {
+	width: 160px;
+	height: 85px;
+}
+.brands .fourth a{
+	width: 160px;
+	height: 100px;
+}
+.brands .fifth a {
+	width: 160px;
+	height: 95px;
+}
+.brands .fourth  a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	max-width: 48%;
+	height: auto;
+}
+.brands .fifth a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	max-width: 48%;
+	height: auto;
+}
+.brands .second a img, .brands .third a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	max-width: 48%;
+	height: auto;
+}
+.brands section:last-of-type a:first-child {
+	margin-left: 160px;
+}
+.brands .first a:nth-child(3) img {
+	height: 133%;
+	left: 47%;
+}
+.brands .first a:nth-child(5) img {
+	height: 168%;
+}
+.brands .first a:nth-child(6) img,
+.brands .second a:nth-child(4) img,
+.brands .second a:nth-child(6) img,
+.brands .second a:nth-child(7) img,
+.brands .third a:nth-child(7) img  {
+	left: 52%;
+}
+.brands .second a:nth-child(1) img,
+.brands .second a:nth-child(2) img,
+.brands .third a:nth-child(1) img,
+.brands .third a:nth-child(2) img,
+.brands .fifth a:nth-child(1) img,
+.brands .fourth a:nth-child(2) img  {
+	left: 48%;
+}
+.brands .fourth a:nth-child(1) img {
+	left: 45%;
+	max-width: 58%;
+}
+.brands .fourth a:nth-child(2) img,
+.brands .fourth a:nth-child(3) img,
+.brands .fourth a:nth-child(4) img,
+.brands .fourth a:nth-child(5) img,
+.brands .fourth a:nth-child(6) img,
+.brands .fourth a:nth-child(7) img,
+.brands .third a:nth-child(5) img,
+.brands .fifth a:nth-child(2) img,
+.brands .fourth a:nth-child(7) img,
+.brands .third a:nth-child(7) img {
+	max-width: 68%;
+}
+.brands .third a:nth-child(1) img,
+.brands .third a:nth-child(2) img {
+	max-width: 60%
+}
+.brands::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+footer {
+	min-height: 60px;
+}
+footer p {
+	margin-top: 6px;
+	margin-bottom: 0;
+	font-family: "Futura PT Book";
+	line-height: 24px;
+	font-size: 18px;
+}
+footer p:first-of-type {
+	margin-left: 40px;
+	float: left;
+	width: 145px;
+	height: 25px;
+	margin-top: 3px;
+}
+footer p:nth-child(2) {
+	float: left;
+	margin-left: 350px;
+	width: 185px;
+	height: 25px;
+	text-align: center;
+	margin-right: 350px;
+}
+footer p:last-of-type {
+	padding-top: 0;
+	padding-right: 20px;
+	height: 24px;
+	position: relative;
+}
+footer p:last-of-type img {
+	position: absolute;
+	right: 0;
+}
+footer::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.overlay {
+	background: transparent;
+	position: absolute;
+	width: 100%;
+	top: 0px;
+}
+.contacts {
+	position: relative;
+}
+.contacts article {
+	position: absolute;
+	width: 380px;
+	height: 310px;
+	left: 8px;
+	top: 10px;
+	background-color: #ffffff;
+}
+.info p {
+	font-family: "Futura PT Light";
+	line-height: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+	margin-left: 55px;
+	color: #666666;
+}
+.contacts .info p:first-child {
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 35px;
+	font-weight: normal;
+	padding-left: 0;
+}
+.info p:nth-child(2n) {
+	margin-bottom: 0;
+}
+.info p:nth-child(2n+1) {
+	margin-top: 0;
+	padding-left: 35px;
+}
+.write-us {
+	width: 580px;
+	height: 635px;
+	color: #000000;
+	background-color: #ffffff;
+	padding-top: 55px;
+	position: fixed;
+	display: none;
+	box-shadow: 0 20px 40px rgba(0,1,1, 0.75);
+	z-index: 200;
+	box-sizing: border-box;
+	outline: 5px solid #ffc600;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.write-us-show {
+	display: block;
+}
+.write-us-close {
+	width: 35px;
+	height: 26px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+	background: 0;
+}
+.write-us-close::before,
+.write-us-close::after {
+	content: "";
+	position: absolute;
+	width: 19px;
+	height: 3px;
+	border-radius: 1px;
+	background-color: #ae7300;
+	top: 10px;
+	left: 2px;
+}
+.write-us-close::before {
+	transform: rotate(45deg);
+}
+.write-us-close::after {
+	transform: rotate(-45deg);
+}
+.write-us textarea {
+	width: 465px;
+	margin-left: 55px;
+	height: 245px;
+	border-radius: 3px;
+	border: 2px solid #d7dcde;
+	outline: 0;
+	margin-top: 14px;
+	box-sizing: border-box;
+	resize: none;
+}
+.write-us p {
+	    display: block;
+    width: 325px;
+    height: 223px;
+    text-align: center;
+    vertical-align: center;
+    /* vertical-align: middle; */
+    padding-top: 70px;
+}
+.write-us input[name="discrabe"]::-webkit-input-placeholder,
+.write-us input[name="name"]::-webkit-input-placeholder,
+.write-us input[name="mail"]::-webkit-input-placeholder,
+.write-us textarea::-webkit-input-placeholder,
+.write-us input[name="discrabe"]::-moz-placeholder,
+.write-us input[name="name"]::-moz-placeholder,
+.write-us input[name="mail"]::-moz-placeholder,
+.write-us textarea::-moz-placeholder {
+	font-family: "Futura PT Light";
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+	line-height: 35px;
+	padding-left: 15px;
+}
