@@ -63,7 +63,8 @@ body {
 @media only screen and (min-width: 1200px) {
   .header {
     height: 307px;
-    width: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .header img {
     top: 103px;
@@ -267,7 +268,6 @@ body {
 @media only screen and (min-width: 1200px) {
   .advantages {
     margin-top: 115px;
-    width: 1400px;
     margin-left: auto;
     margin-right: auto;
     height: 255px;
