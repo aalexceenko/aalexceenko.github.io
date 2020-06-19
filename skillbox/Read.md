@@ -22,5 +22,6 @@
 
 
 ### View
-https://aalexceenko.github.io/skillbox/index.html
-https://aalexceenko.github.io/skillbox/advantages.html
+
+* https://aalexceenko.github.io/skillbox/index.html
+* https://aalexceenko.github.io/skillbox/advantages.html
